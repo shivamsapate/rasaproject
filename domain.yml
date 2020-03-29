@@ -1,0 +1,37 @@
+session_config:
+  session_expiration_time: 60.0
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- bonafite
+- club
+- id
+- book
+responses:
+  utter_greet:
+  - text: " Hey! I am RIT bot.\n I can help you to get information about RIT Institute.\n\
+      \ How can I help you?"
+  utter_bonafite:
+  - text: " 1) Go to Library and take bonafite application\n 2) Fill the form and\
+      \ submit to the office at bonafite section\n 3) Office give you timing at which you\
+      \ reach there and grab your bonafite"
+  utter_club:
+  - text: " List of popular clubs in RIT\n 1) RIT AI club\n 2) Space club\n 3) RIT\
+      \ E-cell\n 4) Baha\n 5) Niquite\n etc....\n"
+  utter_id:
+  - text: "i) Go to the Library and get application form for indentity loss id it\
+      \ is collage ID\n ii) If it is hostal ID then go to hostal office \n iii) Fill\
+      \ the form and submit to the office."
+  utter_goodbye:
+  - text: Bye...Take care!
+  utter_book:
+  - text: " 1) Go to the Library.\n2) Grab at most 3 book that you needed\n3) Go towords\
+      \ the counter and issue book... "
+actions:
+- utter_greet
+- utter_bonafite
+- utter_club
+- utter_id
+- utter_goodbye
+- utter_book
